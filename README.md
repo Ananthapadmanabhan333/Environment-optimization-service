@@ -17,6 +17,61 @@ This is an **environment optimization recommendation engine** that:
 
 ---
 
+## 🏗️ System Architecture
+
+```mermaid
+graph TD
+    A[Environmental Inputs] -->|6 Dimensions| B(Scoring Engine)
+    B -->|Task-Specific Logic| C{Recommendation Generator}
+    C -->|Prioritized| D[Actionable Report]
+    D -->|Impact Estimates| E[Productivity Boost]
+```
+
+### INPUTS → ANALYSIS → RECOMMENDATIONS Flow
+
+```text
+┌─────────────────────────────────────────┐
+│ 1. ENVIRONMENTAL INPUTS (6 Dimensions)  │
+├─────────────────────────────────────────┤
+│ • Lighting (lux, K, CRI, natural %)     │
+│ • Acoustics (dB, sound type)            │
+│ • Layout (desk, monitor, clutter)       │
+│ • Climate (temp, humidity, CO2)         │
+│ • Biophilic (plants, windows, nature)   │
+│ • Personal (task type, sensitivity)     │
+└────────────┬────────────────────────────┘
+             ↓
+┌────────────────────────────────────────┐
+│ 2. SCORING ENGINE                      │
+├────────────────────────────────────────┤
+│ • 5 dimension scorers (0-100 each)      │
+│ • Weighted overall score                │
+│ • Task-specific optimal ranges          │
+│ • Productivity tier classification      │
+└────────────┬────────────────────────────┘
+             ↓
+┌────────────────────────────────────────┐
+│ 3. RECOMMENDATIONS (Prioritized)       │
+├────────────────────────────────────────┤
+│ • Category (lighting, sound, layout...) │
+│ • Priority (critical, high, medium...)  │
+│ • Action & impact estimate              │
+│ • Implementation steps                  │
+│ • Research basis & citations            │
+└────────────┬────────────────────────────┘
+             ↓
+┌────────────────────────────────────────┐
+│ 4. RESULTS & TRACKING                  │
+├────────────────────────────────────────┤
+│ • Overall productivity score            │
+│ • Expected % improvement                │
+│ • 3-tier implementation strategy        │
+│ • Measurement guide                     │
+└────────────────────────────────────────┘
+```
+
+---
+
 ## 📦 What's Included
 
 ### Core System
